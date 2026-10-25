@@ -1,0 +1,101 @@
+{
+  "test": "2026-10-18 Kelowna burn test",
+  "device": "biobot-002",
+  "description": "Alerts the node raised on its own during the test evening (on-device anomaly detector).",
+  "incidents": [
+    {
+      "peakSeverity": "alert",
+      "status": "closed",
+      "openedAt": "2026-10-18T23:04:08Z",
+      "closedAt": "2026-10-18T23:07:37Z",
+      "events": [
+        {
+          "event": "raised",
+          "severity": "alert",
+          "score": 3,
+          "signals": [
+            "pm25_high",
+            "pm25_elevated"
+          ],
+          "occurredAt": "2026-10-18T23:04:08Z",
+          "occurredAtLocal": "2026-10-18T16:04:08-07:00",
+          "readings": {
+            "gasResistance": 42.77999877929688,
+            "humidity": 42.66311264038086,
+            "obstructed": false,
+            "pm1": 68,
+            "pm10": 107,
+            "pm25": 88,
+            "pressure": 973.77001953125,
+            "temperature": 13.19372749328613
+          },
+          "baseline": {
+            "gasResistance": 44.30020904541016,
+            "humidity": 43.55459976196289,
+            "pm25": 5.222621440887451,
+            "ready": true,
+            "temperature": 12.9529333114624
+          }
+        },
+        {
+          "event": "cleared",
+          "severity": "watch",
+          "score": 1,
+          "signals": [
+            "pm25_elevated"
+          ],
+          "occurredAt": "2026-10-18T23:07:37Z",
+          "occurredAtLocal": "2026-10-18T16:07:37-07:00",
+          "readings": {
+            "gasResistance": 50.75299835205078,
+            "humidity": 41.84754943847656,
+            "obstructed": false,
+            "pm1": 11,
+            "pm10": 15,
+            "pm25": 13,
+            "pressure": 973.7100219726562,
+            "temperature": 13.29506397247314
+          },
+          "baseline": {
+            "gasResistance": 44.30020904541016,
+            "humidity": 43.55459976196289,
+            "pm25": 5.222621440887451,
+            "ready": true,
+            "temperature": 12.9529333114624
+          }
+        }
+      ]
+    },
+    {
+      "peakSeverity": "fault",
+      "status": "open",
+      "openedAt": "2026-10-19T00:12:10Z",
+      "closedAt": null,
+      "events": [
+        {
+          "event": "raised",
+          "severity": "fault",
+          "score": 0,
+          "signals": [
+            "pm_sensor_failed"
+          ],
+          "occurredAt": "2026-10-19T00:12:10Z",
+          "occurredAtLocal": "2026-10-18T17:12:10-07:00",
+          "readings": {
+            "gasResistance": 73.98799896240234,
+            "humidity": 46.21564483642578,
+            "pressure": 973.0900268554688,
+            "temperature": 11.77375793457031
+          },
+          "baseline": {
+            "gasResistance": 58.40456390380859,
+            "humidity": 43.99636459350586,
+            "pm25": 5.64483642578125,
+            "ready": true,
+            "temperature": 12.74269104003906
+          }
+        }
+      ]
+    }
+  ]
+}
