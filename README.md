@@ -1,4 +1,4 @@
-# Wildfire Alarm data (biobot-data)
+# Wildfire Alarm data
 
 Open datasets recorded by Wildfire Alarm sensor nodes: controlled test burns
 and field recordings. Each dataset has its own folder with a README that says
